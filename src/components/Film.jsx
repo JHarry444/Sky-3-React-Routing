@@ -1,7 +1,6 @@
 import { Card, Button } from 'react-bootstrap';
 
 const Film = (props) => {
-
     return (
         <Card>
             <Card.Img variant="top" src={props.Poster} />

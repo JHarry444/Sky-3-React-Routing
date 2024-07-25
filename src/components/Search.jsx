@@ -17,8 +17,7 @@ const Search = () => {
     const handleSearch = async (event) => {
         event.preventDefault();
         try {
-            debugger
-            const response = await axios.get(`http://www.omdbapi.com/?apikey=335035be=335035be&s=${searchTerm}`);
+            const response = await axios.get(`http://www.omdbapi.com/?apikey=335035be&s=${searchTerm}`);
             if (response.data.Error) {
                 setError(response.data.Error);
             } else {
