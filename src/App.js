@@ -9,7 +9,7 @@ const App = () => {
       {/* Add Navigation */}
       {/* Create a routes element */}
       {/* Add a route to the Routes with a path of '/' and an element of Home */}
-      {/* Add another route for Search at /searcher */}
+      {/* Add another route for Search at /search */}
     </>
   );
 }
