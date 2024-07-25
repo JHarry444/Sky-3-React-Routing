@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Image, Container, Row, Col, Table } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { omdbUrl, apiKey } from "./consts.json";
 
 const Details = (props) => {
 
@@ -14,7 +13,7 @@ const Details = (props) => {
 
         const getData = async () => {
             try {
-                const { data } = await axios.get(`${omdbUrl}${apiKey}&i=${id}`);
+                const { data } = await axios.get(`http://www.omdbapi.com/?apikey=335035be&i=${id}`);
                 setDetails(data);
             } catch (err) {
                 console.error(err)

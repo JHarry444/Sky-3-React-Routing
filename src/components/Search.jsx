@@ -4,7 +4,6 @@ import axios from 'axios';
 import { Alert } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import SearchResults from './SearchResults';
-import { omdbUrl, apiKey } from "./consts.json";
 
 const Search = () => {
 
@@ -18,7 +17,8 @@ const Search = () => {
     const handleSearch = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.get(`${omdbUrl}${apiKey}=335035be&s=${searchTerm}`);
+            debugger
+            const response = await axios.get(`http://www.omdbapi.com/?apikey=335035be=335035be&s=${searchTerm}`);
             if (response.data.Error) {
                 setError(response.data.Error);
             } else {
