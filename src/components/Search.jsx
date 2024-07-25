@@ -32,7 +32,7 @@ const Search = () => {
 
     const getDetails = (id) => {
         console.log(id);
-        navigate(`/details/${id}`);
+        //  navigate to /details/:id
     }
 
 

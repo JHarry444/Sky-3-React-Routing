@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const Details = (props) => {
 
-    const { id } = useParams();
+    // Get the id using useParams()
     const [details, setDetails] = useState({});
 
     useEffect(() => {
